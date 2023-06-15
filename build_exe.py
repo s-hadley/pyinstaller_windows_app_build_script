@@ -17,9 +17,10 @@ app_name = app_name_no_spaces+'_v'+app_version_no_dots
 #*** PyInstaller Build Command ****
 ##########################################################
 
-# Replace 'python3' with the command you use to start Python in your command prompt. Normally it's 'python'
-# Replace 'demo_app.py'
-command_text = 'python3 -m PyInstaller demo_app.py '
+# Replace 'python' with the command you use to start Python in your command prompt. Normally it's 'python', so you
+# might not have to change it.
+# Replace 'demo_app.py' with the name of the Python script you want to turn into a .exe Windows app
+command_text = 'python -m PyInstaller demo_app.py '
 
 # Instructs PyInstaller to produce a single file .exe app. Do not change this command.
 command_text +='--onefile '
